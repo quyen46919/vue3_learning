@@ -1,14 +1,14 @@
 <template>
   <div :class="['add-todo', isShowForm ? '' : 'add-todo__column']">
     <button
-      v-if="isShowForm"
+      v-if="!isShowForm"
       class="add-todo__button"
       @click="showForm"
     >
       Add new todo
     </button>
     <form
-      v-if="!isShowForm"
+      v-if="isShowForm"
       class="add-todo__form"
       @submit="addNewTodo"
     >

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <p>Notifications</p>
-    <p>Tasks</p>
+    <router-link to="/">Tasks</router-link>
+    <router-link to="/noti">Notifications</router-link>
   </div>
 </template>
 
@@ -26,7 +26,12 @@
     font-weight: 500;
     color: gray;
   }
-  .header p {
+  .header a {
     font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .header a.router-link-active {
+    color: rgb(19, 19, 19);
   }
 </style>

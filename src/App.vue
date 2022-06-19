@@ -1,19 +1,17 @@
 <template>
   <div id="my-app">
     <Header />
-    <TodoList />
+    <router-view />
   </div>
 </template>
 
 <script>
   import Header from './components/Header.vue'
-  import TodoList from './components/TodoList.vue'
 
   export default {
     name: 'App',
     components: {
-      Header,
-      TodoList
+      Header
     }
   }
 </script>
